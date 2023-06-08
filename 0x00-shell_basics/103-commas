@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1A | sed -E 's/(.*\/)$/ \1/' | LC_ALL=C sort -dfk1.1 | tr '\n' ',' | sed 's/,$/\n/'
